@@ -15,10 +15,10 @@ def sortowanie(lista):
 
     for i in range(dlugosc):
         if i < (dlugosc - 1):
-            min_wartosc = min(lista[i + 1:])
+            min_wartosc = min(lista[i + 1:])  # szukanie minimalnej wartosci
             if lista[i] > min_wartosc:
                 indeks = lista.index(min_wartosc)
-                lista[i], lista[indeks] = lista[indeks], lista[i]
+                lista[i], lista[indeks] = lista[indeks], lista[i] 
     print("Lista po sortowaniu:", lista)
 
 
